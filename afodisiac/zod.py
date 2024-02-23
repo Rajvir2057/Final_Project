@@ -1,4 +1,7 @@
-
+class ZodiacSign:
+    def __init__(self, name, characteristics):
+        self.name = name
+        self.characteristics = characteristics
 
 
 def get_zodiac_signs(month, day):
@@ -45,11 +48,13 @@ def get_zodiac_signs(month, day):
 
 
 def main():
+    name= input("Enter your name: \n ")
     month = int(input("Enter your birth month (as a number): "))
     day = int(input("Enter your birth day (as a number): "))
 
     sign, characteristics = get_zodiac_signs(month, day)
     if sign != "Invalid input":
+        print(name)
         print("Your zodiac sign is:", sign)
         print("Characteristics of", sign, ":", characteristics)
     else:
