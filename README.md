@@ -1,1 +1,2 @@
 # Final_Project
+have you ever been asked, "What is your sign?" and you were not sure, worry no more because we have ceated for you a state of the yard application where you can enter your birthday and it will tell you your star sign.  so now you can always have an answer to that question.
