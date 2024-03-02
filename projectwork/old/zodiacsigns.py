@@ -14,7 +14,7 @@ if month == 'january':
     astro_sign = 'Capricorn' if (day < 20) else 'Aquarias'
 if month == 'february':
     astro_sign = 'Aquarias' if (day < 19) else 'Pisces'
-if month == 'march':
+if month == 'march': 
     astro_sign = 'Pisces' if (day < 21) else 'Aries'
 if month == 'april':
     astro_sign = 'Aries' if (day < 20) else 'Taurus'

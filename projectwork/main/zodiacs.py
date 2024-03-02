@@ -1,9 +1,9 @@
-
-input("Enter Your Name :) :  ")
+#This is a simple input.
+input("Enter Your Name :) :  ") 
 print("....................................................")
 print("WELCOME TO RAJ.ZODIAC SIGNS.. HOPE YOU ENJOY.")
 print("....................................................")
-
+#Here i used a class that uses inheritence...
 class Zodiac:
     def __init__(self,day,month):
         self.day= day
@@ -60,8 +60,8 @@ class Raj_zodiac(Zodiac):
             astro_sign = 'Scorpio' if (day< 22) else  'Sagittarius'
 
         print("______________________________________________________")
-
-        print ("Your Zodiac Sign Is:  ", astro_sign)
+        print (f"Your Zodiac Sign Is:  {astro_sign}")
+        print("______________________________________________________")
         if astro_sign== "Sagittarius":
             file= open("try2.txt","r")
             line= file.readlines()
@@ -185,8 +185,8 @@ class Raj_zodiac(Zodiac):
 
         else:
             print("Thats unfortunate..")
-    
+
         if input("Do You want to check again? (yes/no): ")== "no":
-             running= False
+            running= False
     print("______________________________________________________")
 
