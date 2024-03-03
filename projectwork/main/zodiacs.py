@@ -12,10 +12,9 @@ class Zodiac:
 
 class Raj_zodiac(Zodiac):
 
-    running = True 
+    running = True #used a boolean format..
 
-    while running:
-
+    while running:   
         day= int(input("Please Enter Your Birthday day only: "))
 
         print("Choose Your Month.")
@@ -185,8 +184,9 @@ class Raj_zodiac(Zodiac):
 
         else:
             print("Thats unfortunate..")
-
+    
         if input("Do You want to check again? (yes/no): ")== "no":
             running= False
-    print("______________________________________________________")
+            
+print("______________________________________________________")
 

@@ -32,4 +32,3 @@ for index, word in enumerate(data_for_delay):
     print(word, end= " ", flush= True)
     time.sleep(2)
 
-
