@@ -1,3 +1,6 @@
+import time 
+import csv 
+import os
 #This is a simple input.
 input("Enter Your Name :) :  ") 
 print("....................................................")
@@ -188,5 +191,78 @@ class Raj_zodiac(Zodiac):
         if input("Do You want to check again? (yes/no): ")== "no":
             running= False
             
-print("______________________________________________________")
+print("_______________________________________________________________________")
 
+print("Hello, Thank your for checking your sign.")
+time.sleep(2)
+lucky_fortune=("This will help you learn your lucky number for good fortune.")
+upper_case = lucky_fortune.upper()
+print(upper_case)
+
+print('.......................................................................')
+time.sleep(1)
+print("A little fact!.")
+data_for_delay=["Do","you","know","your","lucky","number","can","help","in","bringing","good fortune."]
+for index, word in enumerate(data_for_delay):
+    print(word, end= " ", flush= True)
+    time.sleep(1)
+
+print("Time to know your lucky number")
+
+zod_sign = input("Enter your zodiac sign.: ")
+
+try:
+    with open('lucky1.txt', 'r') as file:
+        lines = file.readlines()
+
+    zod_sign = zod_sign.strip().lower()
+
+    print("Input Zodiac Sign:", zod_sign)
+
+    if zod_sign == 'sagittarius':
+        print(lines[0])
+    elif zod_sign == 'capricorn':
+        print(lines[1])
+    elif zod_sign == 'aquarius':
+        print(lines[2])
+    elif zod_sign == 'pisces':
+        print(lines[3])
+    elif zod_sign == 'aries':
+        print(lines[4])
+    elif zod_sign == 'taurus':
+        print(lines[5])
+    elif zod_sign == 'gemini':
+        print(lines[6])
+    elif zod_sign == 'cancer':
+        print(lines[7])
+    elif zod_sign == 'leo':
+        print(lines[8])
+    elif zod_sign == 'virgo':
+        print(lines[9])
+    elif zod_sign == 'libra':
+        print(lines[10])
+    elif zod_sign == 'scorpio':
+        print(lines[11])
+    else:
+        print("Invalid zodiac sign!")
+
+except FileNotFoundError:
+    print("This file does not exist.")
+
+# this is now reading a csv file with lines...
+print("Time to know your lucky colour.")
+
+Entry = input("Please enter your zodiac sign again!: ").lower()
+
+if os.path.exists('zodiac_color_record.csv'):
+    with open('zodiac_color_record.csv', 'r') as file:
+        reader = csv.reader(file)
+        for zodiac_sign, lucky_color in reader:
+            if zodiac_sign.lower() == Entry:
+                print(f"The lucky color for {zodiac_sign} is: {lucky_color}")
+                break
+        else:
+            print("Hmm. This was not expected.")
+else:
+    print("The CSV file does not exist.")
+    
