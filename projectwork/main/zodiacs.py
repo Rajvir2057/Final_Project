@@ -207,7 +207,7 @@ for index, word in enumerate(data_for_delay):
     print(word, end= " ", flush= True)
     time.sleep(1)
 
-print("Time to know your lucky number")
+print("Time to know your lucky number \n")
 
 zod_sign = input("Enter your zodiac sign.: ")
 
@@ -248,10 +248,10 @@ try:
 
 except FileNotFoundError:
     print("This file does not exist.")
-
+("\n")
 # this is now reading a csv file with lines...
 print("Time to know your lucky colour.")
-
+("\n")
 Entry = input("Please enter your zodiac sign again!: ").lower()
 
 if os.path.exists('zodiac_color_record.csv'):
@@ -265,4 +265,17 @@ if os.path.exists('zodiac_color_record.csv'):
             print("Hmm. This was not expected.")
 else:
     print("The CSV file does not exist.")
+
+
+from more_for_zodiac import Compactibility
+
+class Zodiac_compatibility(Compactibility):
+    def __init__(self):
+        self.zodiac1 = input("Enter your zodiac sign please.: ")
+        self.zodiac2 = input("Enter your partner's zodiac sign please.: ")
     
+    def calculate_compatibility(self):
+        compact= Compactibility(self.zodiac1, self.zodiac2)
+        compact.zod_compact()
+zodiac_comp = Zodiac_compatibility()
+zodiac_comp.calculate_compatibility()

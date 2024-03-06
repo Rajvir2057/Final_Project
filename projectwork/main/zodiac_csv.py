@@ -3,7 +3,6 @@ import csv
 def zodiac_info():
     fields = ['zodiac_sign', 'lucky_color']
 
-    # Corrected construction of rows
     rows = [
         {'zodiac_sign': 'Sagittarius', 'lucky_color': 'Purple, dark blue'},
         {'zodiac_sign': 'Capricorn', 'lucky_color': 'Brown, black'},
@@ -27,6 +26,5 @@ def zodiac_info():
         csvwriter.writeheader()
 
         csvwriter.writerows(rows)
-
 zodiac_info()
 

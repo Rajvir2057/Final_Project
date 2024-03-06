@@ -1,4 +1,4 @@
-# this will have a math calc without using a loop function 
+ 
 #I want to form a cute word game using len(), like i mean it will do this see yea,
 name1= input("Enter your name here please: ")
 name_len1 = len(name1)
