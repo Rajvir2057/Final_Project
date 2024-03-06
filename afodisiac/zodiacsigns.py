@@ -96,6 +96,17 @@ def main():
             time.sleep(1)
             print(f"You are {age} years old.")
             time.sleep(1)
+            try:
+                with open(f"{name}.txt",'r')as file:
+                    print("wait you have been here before, i remember you, here is your info:")
+                    print(file.read())
+                    print("please coe back again")
+            except:
+                with open (f"{name}.txt", 'w') as file:
+                    file.write(f"name: {name}\n, sign: {sign}, characteristics: {characteristics}  ")
+                    print(f"name is: {name}\n your sign is : {sign}\n your characteristics are : {characteristics}")
+                    print("you can always accesss your information here")
+            
             print("thanks for checking us out, tell a friend to tell a friend")
             break
         else:
