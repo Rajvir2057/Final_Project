@@ -1,0 +1,5 @@
+name: aldred 
+ age: 19 
+ date of birth: 2005 
+ sign: Libra 
+ characteristics: extroverted, cosy, and friendly people  

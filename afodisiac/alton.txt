@@ -1,0 +1,5 @@
+name: alton 
+ age: 16 
+ date of birth: 2008 
+ sign: Gemini 
+ characteristics: curious, clever, and outstanding communicators who are pretty unpredictable  

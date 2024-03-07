@@ -1,0 +1,5 @@
+name: afod 
+ age: 22 
+ date of birth: 2002 
+ sign: Leo 
+ characteristics: Generous, warmhearted, creative, enthusiastic, and faithful.  
