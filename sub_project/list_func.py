@@ -3,9 +3,9 @@ import numpy as np
 
 data_entry = int(input("Enter numbers separated by spaces.: "))
 
-numbers= [int(num) for numm in data_entry.split()]
+numbers= data_entry.split()
 
-array= np.array(array)
+array= np.array(numbers)
 array_sum = np.sum(array)
 
 array_sub = np.sub(array)
