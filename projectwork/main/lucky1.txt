@@ -1,0 +1,12 @@
+Sagittarius => 3
+Capricorn => 4
+Aquarius  => 11
+Pisces  => 7
+Aries  => 9
+Taurus  => 5 and 6
+Gemini => 5
+Cancer  => 2
+Leo => 1
+Virgo  => 3
+Libra  => 7
+Scorpio => 8
